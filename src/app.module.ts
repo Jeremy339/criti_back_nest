@@ -11,9 +11,11 @@ import { ProductoModule } from './modules/producto/producto.module';
 import { RoleModule } from './modules/role/role.module';
 import { ClienteModule } from './modules/cliente/cliente.module';
 import { PedidoModule } from './modules/pedido/pedido.module';
+import { CategoriaModule } from './modules/categoria/categoria.module';
+import { LibroModule } from './modules/libro/libro.module';
 
 @Module({
-  imports: [AuthModule, UsersModule, DatabaseModule, ConfigModule, CategoriaModule, PersonaModule, ProductoModule, RoleModule, ClienteModule, PedidoModule],
+  imports: [AuthModule, UsersModule, DatabaseModule, ConfigModule, CategoriaModule, PersonaModule, ProductoModule, RoleModule, ClienteModule, PedidoModule, LibroModule],
   controllers: [AppController],
   providers: [AppService],
 })

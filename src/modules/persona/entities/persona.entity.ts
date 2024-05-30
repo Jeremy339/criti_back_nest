@@ -12,9 +12,6 @@ export class Persona {
     @Column()
     apellido: string
 
-    @Column()
-    sexo: string
-
     @OneToOne(() => User, user => user.persona)
     @JoinColumn()
     user: User

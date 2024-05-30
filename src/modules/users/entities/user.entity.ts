@@ -11,13 +11,16 @@ export class User {
     name: string;
 
     @Column()
+    lastname:string;
+
+    @Column()
     mail: string;
 
     @Column()
     password: string;
 
     @Column()
-    telefono: string;
+    fechaNacimiento: string;
 
     @OneToOne(() => Persona, persona => persona.user, { cascade: true })
     persona: Persona;
