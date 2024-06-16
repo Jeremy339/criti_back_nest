@@ -1,17 +1,30 @@
-## Login sin conexion a base de datos
+### Login sin conexion a base de datos
+
+POST http://127.0.0.1:3000/auth/register
+Content-Type: application/json
+
+{
+    "name": "prueba2",
+    "mail":"casa2@gmail.com",
+    "password": "654321",
+    "telefono": "holas"
+}
+
+
+### Login sin conexion a base de datos
 
 POST http://127.0.0.1:3000/auth/login
 Content-Type: application/json
 
 {
-    "name": "prueba2",
+    "name": "prueba",
     "email":"casa2@gmail.com",
     "password": "654321"
 }
 
 ####
 GET http://127.0.0.1:3000/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlkIjoxLCJpYXQiOjE3MTU4NzM0ODksImV4cCI6MTcxNTg3NDA5NH0.mqZPC_8bEigkSW8535DlUdRBBdH_Tb9oVg8aoPnzwCU
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNhc2EyQGdtYWlsLmNvbSIsImlkIjoxLCJpYXQiOjE3MTg1NzgwMDAsImV4cCI6MTcxODU3ODYwNX0.4IyolCDQeg3ef3dq5szPZRWeII6ET6TX-aX8XG0uUdo
 
 
 

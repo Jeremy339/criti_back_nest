@@ -2,7 +2,9 @@ import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/commo
 import { LibroService } from './libro.service';
 import { CreateLibroDto } from './dto/create-libro.dto';
 import { UpdateLibroDto } from './dto/update-libro.dto';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('libro')
 @Controller('libro')
 export class LibroController {
   constructor(private readonly libroService: LibroService) {}
