@@ -9,6 +9,9 @@ import { Repository } from 'typeorm';
 export class LibroService {
   constructor(@InjectRepository(Libro) private libroRepository: Repository<Libro>){}
   
+  queryBuilder(alias:string){
+    return this.libroRepository.createQueryBuilder(alias);
+  }
   
   create(createLibroDto: CreateLibroDto) {
     return this.libroRepository.save(createLibroDto);

@@ -1,0 +1,16 @@
+### Listar Libros
+GET http://localhost:3000/libro
+
+### Crear Libros
+POST http://localhost:3000/libro
+Content-Type: application/json
+
+{
+    "titulo": "Antología de Interés",
+    "autor": "Alexander Pacho",
+    "sinopsis": "Cuentos de reflexión",
+    "categoriaId": 3
+}
+
+### Listar Libros Por Letra
+GET http://localhost:3000/libro/back?page=1
